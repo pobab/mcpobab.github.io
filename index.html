@@ -12,9 +12,15 @@
     <link rel="icon" type="image/x-icon" href="assets/image/icon.png">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/">
 
-    <!-- Bootstrap core CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core JS -->
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
 
@@ -46,10 +52,29 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
             <a class="nav-link" href="pages/works/index.html">Works</a>
             <a class="nav-link" href="pages/about/index.html">About</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact" data-bs-toggle="modal" data-bs-target="#contact">Contact</a>
           </nav>
         </div>
       </header>
+      <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body text-center rounded pb-3 text-white" style="background-color: #486ab7;">
+              <img src="assets/image/wumpus.gif">
+              <h1 style="font-family: 'Staatliches', cursive; font-size: 54px; margin: 0; padding: 0; line-height: 0.7em;" class="pt-4">d i s c o r d</h1>
+              <h2 style="font-family: 'Staatliches', cursive; font-size: 42px; margin: 0; padding: 0;" class="">c o n t a c t</h2>
+              <div class="progress mx-auto mb-3" style="height: 3px; width: 57%;">
+                <div class="progress-bar w-100" style="background-color: #cdc2ff;"></div>
+              </div>
+              <p style="color: #d0dff3">
+                You need to join the <a href="https://discord.gg/GmUCeey" target="_blank" style="color: rgb(227, 227, 227); font-weight: bold;">Povelopment Discord Server</a>
+                to be able to contact me via direct message on discord<br><br>
+                and also... my <b>ID</b> in discord is <b>pobab#6386</b>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main class="px-3">
         <h1>Hi! Im Pobab</h1>

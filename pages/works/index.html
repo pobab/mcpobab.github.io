@@ -11,6 +11,10 @@
     <link rel="icon" type="image/x-icon" href="../../assets/image/icon.png">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
     
 
     <!-- Bootstrap core CSS -->
@@ -50,12 +54,33 @@
                 <a class="nav-link" href="../../index.html">Home</a>
                 <a class="nav-link active" href="#">Works</a>
                 <a class="nav-link" href="../about/index.html">About</a>
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact" data-bs-toggle="modal">Contact</a>
               </nav>
             </div>
           </header>
         </div>
+        <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body text-center rounded pb-3 text-white" style="background-color: #486ab7;">
+                <img src="../../assets/image/wumpus.gif">
+                <h1 style="font-family: 'Staatliches', cursive; font-size: 54px; margin: 0; padding: 0; line-height: 0.7em;" class="pt-4">d i s c o r d</h1>
+                <h2 style="font-family: 'Staatliches', cursive; font-size: 42px; margin: 0; padding: 0;" class="">c o n t a c t</h2>
+                <div class="progress mx-auto mb-3" style="height: 3px; width: 57%;">
+                  <div class="progress-bar w-100" style="background-color: #cdc2ff;"></div>
+                </div>
+                <p style="color: #d0dff3">
+                  You need to join the <a href="https://discord.gg/GmUCeey" target="_blank" style="color: rgb(227, 227, 227); font-weight: bold;">Povelopment Discord Server</a>
+                  to be able to contact me via direct message on discord<br><br>
+                  and also... my <b>ID</b> in discord is <b>pobab#6386</b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+
 
       <div class="bg-dark text-secondary px-4 py-5 text-center" style="box-shadow: 1px 10px 7px rgba(0, 0, 0, 0.356);">
         <div class="pt-4">
@@ -80,6 +105,7 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
 
+            <!-- Forging Tools -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/menempa.png" class="card-img-top">
@@ -91,7 +117,9 @@
                   </div>
                   <p class="card-text">Basically its repair tools like player xp does on anvil. but its something different... we need anvil, hammer and material to repair a tools without player xp</p>
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#forging">Lets see how it work!</button>
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#forging">
+                      Lets see how it work!
+                    </button>
                   </div>
                 </div>
               </div>
@@ -105,6 +133,7 @@
               </div>
             </div>
             
+            <!-- Atlas -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/atlas.png" class="card-img-top">
@@ -132,6 +161,7 @@
               </div>
             </div>
 
+            <!-- Custom HUD -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/hud.png" class="card-img-top">
@@ -160,6 +190,7 @@
             </div>
 
 
+            <!-- Zombie Infect -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/infected.png" class="card-img-top">
@@ -187,6 +218,7 @@
               </div>
             </div>
 
+            <!-- Lifesteal -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/lifesteal.png" class="card-img-top">
@@ -214,6 +246,7 @@
               </div>
             </div>
 
+            <!-- Custom Blocks -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/customblocks.png" class="card-img-top">
@@ -245,6 +278,7 @@
             </div>
 
 
+            <!-- Gravestone -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/gravestone.png" class="card-img-top">
@@ -273,6 +307,7 @@
               </div>
             </div>
 
+            <!-- Villager Dialogue -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/dialog.png" class="card-img-top">
@@ -301,6 +336,7 @@
               </div>
             </div>
 
+            <!-- Rocket Boots -->
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
                 <img src="../../assets/image/rocket.png" class="card-img-top">
