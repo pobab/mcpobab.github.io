@@ -6,14 +6,15 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Heroes · Bootstrap v5.1</title>
+    <title>Works</title>
 
+    <link rel="icon" type="image/x-icon" href="../../assets/image/icon.png">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/heroes/">
 
     
 
     <!-- Bootstrap core CSS -->
-<link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -37,19 +38,18 @@
     <link href="../../cover.css" rel="stylesheet">
   </head>
 
-
+  <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
 
   <body style="background-color: rgb(68, 59, 44, 0.574);">
     <main>
-
-      <div style="background-color: #212529;">
-        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column background-opacity">
+      <div style="background-color: #131414;">
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
           <header class="mb-auto">
             <div style="text-align: center;">
               <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="../../index.html">Home</a>
                 <a class="nav-link active" href="#">Works</a>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="../about/index.html">About</a>
                 <a class="nav-link" href="#">Contact</a>
               </nav>
             </div>
@@ -58,16 +58,16 @@
       </div>
 
       <div class="bg-dark text-secondary px-4 py-5 text-center" style="box-shadow: 1px 10px 7px rgba(0, 0, 0, 0.356);">
-        <div class="pb-2 pt-4">
-          <img src="../../assets/img/mcdev.png" height="180px" style="margin-top: -30px;">
+        <div class="pt-4">
+          <img src="../../assets/image/mcdev.png" height="180px" style="margin-top: -30px;">
           <div class="col-lg-6 mx-auto">
 
             <p class="fs-5 mb-sm-0 mt-3 text-white">
               Most of my stuff are using <a href="https://denizenscript.com/"  target="_blank" class="text-white">Denizen</a> and here is the project i made!<br>
-              <div class="text-white-50">might you will wondering to "why you not using Java?"</div>
+              <div class="text-white-50">might you will wonder to "why you not using Java?"</div>
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-              <button class="btn btn-outline-info btn-lg px-4">Lets find out about me in here!</button>
+              <a class="btn btn-outline-info btn-lg px-4" role="button" href="../about/index.html">Lets find out about me in here!</a>
             </div>
 
           </div>
@@ -75,14 +75,14 @@
       </div>
 
         
-      <div class="album py-5 mt-5">
+      <div class="album pb-5">
         <div class="container mt-5">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
 
             <div class="col text-white">
               <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
-                <img src="../../assets/img/menempa.png" class="card-img-top">
-
+                <img src="../../assets/image/menempa.png" class="card-img-top">
                 <div class="card-body text-center">
                   <h5 class="card-title">Forging Tools</h5>
                   <h6 class="card-subtitle mb-2 text-white-50">Repair a tools with material</h6>
@@ -91,18 +91,246 @@
                   </div>
                   <p class="card-text">Basically its repair tools like player xp does on anvil. but its something different... we need anvil, hammer and material to repair a tools without player xp</p>
                   <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary fw-bold text-white-70" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);">Lets see how it work!</button>
-                  </div>
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#forging">Lets see how it work!</button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="modal fade" id="forging" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/forging.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/atlas.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Map Atlas</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">The maps look like GPS</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 45%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text pb-3 pt-2">The filled map will keep updating and adjust to player location while the player keep moving</p>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#atlas">Lets see how it looks!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="atlas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
 
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/hud.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Custom Hud</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Give more information within HUD</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 65%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text pb-3 pt-2">Give more information needed<br>without using scoreboard things</p>
+                  <div class="d-grid gap-2 col-9 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#hud">Other features may related to this</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="hud" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/infected.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Zombie Infection</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Infected and being a zombie</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 53%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text">The zombies attack and infect players and<br>turn them into zombies, even players can<br>infect other players too!</p>
+                  <div class="d-grid gap-2 col-9 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#infect">
+                      Lets see how zombies invading!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="infect" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/lifesteal.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Lifesteal</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Stole hearts from other player</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 55%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text">Steal the hearts from other players and<br>make their hearts as your heart.<br>players can make their heart too!</p>
+                  <div class="d-grid gap-2 col-10 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#lifesteal">
+                      Lets see how player steal their hearts!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="lifesteal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/customblocks.png" class="card-img-top">
+                <div class="card-body text-center">
+                  <h5 class="card-title">Custom Blocks</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Custom Blocks with using player head</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 71%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text">
+                    Make a new blocks with using player head<br>texture from <a href="https://minecraft-heads.com/" target="_blank" class="text-white">Player Head Database</a>,
+                    and<br>then implement it on blocks
+                  </p>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#customblocks">
+                      Lets see how it work!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="customblocks" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/gravestone.png" class="card-img-top">
+
+                <div class="card-body text-center">
+                  <h5 class="card-title">Gravestone</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Keep items in the grave</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 45%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text">The gravestone still keep your item to their container, after the player respawn the items are gone but the items still on the gravestone container</p>
+                  <div class="d-grid gap-2 col-11 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#gravestone">
+                      Lets see how gravestone keep your items
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="gravestone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/dialog.png" class="card-img-top">
+
+                <div class="card-body text-center">
+                  <h5 class="card-title">Villager Dialogue</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Talking with any villager!</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 45%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text pb-3 pt-2">Talking with villager instead trading with them, the villager might will offer a quest to player too</p>
+                  <div class="d-grid gap-2 col-8 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#dialog">
+                      Lets see how villager talking
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="dialog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/dialog.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col text-white">
+              <div class="card shadow-sm" style="background-color: rgb(54, 54, 54);">
+                <img src="../../assets/image/rocket.png" class="card-img-top">
+
+                <div class="card-body text-center">
+                  <h5 class="card-title">Rocket Boots</h5>
+                  <h6 class="card-subtitle mb-2 text-white-50">Flight with using fuel</h6>
+                  <div class="progress mx-auto mb-3" style="height: 3px; width: 40%;">
+                    <div class="progress-bar w-100" style="background-color: rgb(150, 118, 66);"></div>
+                  </div>
+                  <p class="card-text">The boots require a fuel to let player flight, Fuel cannot use a combustible items like wood things. Refueling are needed when the boots run out of fuel</p>
+                  <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary fw-bold text-white-70" id="preview" style="background-color: rgb(94, 71, 23); border-color: rgb(94, 71, 23);" data-bs-toggle="modal" data-bs-target="#rocket">
+                      Lets see how it work!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="rocket" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <video id="video" controls muted src="../../assets/video/atlas.mp4"></video>
+                  <button type="button" id="video" class="btn-close position-relative position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close" style="height: 30px; width: 30px;"></button>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
         </div>
       </div>
+    </div>
   
     </main>
   </body>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </html>
